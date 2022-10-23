@@ -51,6 +51,7 @@
         <configuration>
           <moduleName>com.effectiveem.app.App</moduleName>
           <moduleShortName>eemapp</moduleShortName>
+          <includes>**/*Test.java</includes>
         </configuration>
       </plugin>
     </plugins>
