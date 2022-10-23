@@ -33,6 +33,10 @@ public class TableRowVOTest extends GWTTestCase {
       //    "com.google.gwt.junit.JUnitFatalLaunchException: The test class
       //    'com.effectiveem.app.table.TableRowVOTest' was not found in module
       //    'com.some.completely.different.package.App'; no compilation unit for that type was seen"
+      //
+      // NOTE: simeshev - 2022-10-23 - GWT seems look for sources based on the fully qualified path to the module.
+      // This means that GWT-compilable classes must be under <GWT module path> of <GWT module path>.<Module name>
+      // when source="".
       return "com.effectiveem.app.App";
    }
 }
