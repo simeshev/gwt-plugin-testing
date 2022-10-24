@@ -4,8 +4,12 @@ import com.google.gwt.junit.client.GWTTestCase;
 
 public class TableRowVOTest extends GWTTestCase {
 
+   private TableRowVO tableRowVO;
+
    public void testGetId() {
 
+      tableRowVO.setId(1);
+      assertEquals(1, tableRowVO.getId());
    }
 
    public void testSetId() {
@@ -18,6 +22,14 @@ public class TableRowVOTest extends GWTTestCase {
 
    public void testTestSetName() {
 
+   }
+
+   @Override
+   protected void gwtSetUp() throws Exception {
+
+      super.gwtSetUp();
+
+      tableRowVO = new TableRowVO();
    }
 
    @Override
